@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SYST3M | NeverDiePVP</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0b0b0b;
+      color: #fff;
+    }
+
+    header {
+      background: url('244e8efe-dd9e-446c-afb5-7ab1accfbbed.png') no-repeat center;
+      background-size: cover;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .logo {
+      width: 150px;
+      display: block;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 0 15px #ff3b3b);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff3b3b;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .language-selector {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #111;
+      border: 2px solid #ff3b3b;
+      border-radius: 8px;
+      padding: 5px 10px;
+      color: white;
+      font-size: 1rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff3b3b55;
+    }
+
+    h2 {
+      color: #ff3b3b;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 2;
+    }
+
+    ul li::before {
+      content: "✦ ";
+      color: #ff3b3b;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto 0;
+    }
+
+    .tab-button {
+      background-color: #111;
+      color: #fff;
+      border: 2px solid #ff3b3b;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 0 10px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .tab-button.active, .tab-button:hover {
+      background-color: #ff3b3b;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .discord-link a {
+      background-color: #7289da;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .discord-link a:hover {
+      background-color: #5b6eae;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="1767db6e-8f04-4799-a27f-6f8429fc242f.png" alt="SYST3M Logo" class="logo">
+    <h1>SYST3M</h1>
+    <p id="subtitle">NeverDiePVP Crew</p>
+    <select class="language-selector" onchange="switchLanguage(this.value)">
+      <option value="de">🌐 Deutsch</option>
+      <option value="en">🌐 English</option>
+      <option value="fr">🌐 Français</option>
+    </select>
+  </header>
+
+  <section>
+    <h2 id="req-title">🔥 Voraussetzungen</h2>
+    <ul id="requirements">
+      <li>Mindestens <strong>500 Kills</strong> (POV erforderlich)</li>
+      <li>Mindestens <strong>1.7 KD</strong> (POV erforderlich)</li>
+      <li>Aktivität auf <strong>NeverdiePVP</strong></li>
+      <li>Respektvolles Verhalten gegenüber Crew & Gegnern</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="about-title">👥 Über die Crew</h2>
+    <p id="about-text">
+      Wir waren eine lange Zeit auf <strong>GermanFastCrimeLife</strong> aktiv und haben dort jede Fraktion dominiert. Jetzt sind wir auf <strong>NeverdiePVP</strong> – und unser Ziel ist klar: Wir reißen alles auseinander. Nur die Stärksten gehören zu uns – willkommen bei <span style="color: #ff3b3b;">SYST3M</span>.
+    </p>
+  </section>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="switchTab('discord')">📩 Discord</button>
+    <button class="tab-button" onclick="switchTab('members')">👤 Member</button>
+  </div>
+
+  <section id="discord" class="tab-content active">
+    <h2>🎮 Discord</h2>
+    <p id="discord-text">
+      Wenn du gut bist – zeig es uns auf Discord!<br>
+      If you're good – prove it on Discord!<br>
+      Si tu es fort – rejoins notre Discord !
+    </p>
+    <div class="discord-link">
+      <a href="https://discord.gg/PMVCUQca" target="_blank">➡️ Join Now</a>
+    </div>
+  </section>
+
+  <section id="members" class="tab-content">
+    <h2 id="members-title">👑 Crew-Mitglieder</h2>
+    <ul id="members-list">
+     <li>PornoPeter/05Mörtel</li>
+      <li>Rudi/Txm</li>
+      <li>Harry/Muqa</li>
+      <li>nsty</li>
+      <li>Lucas Caruso</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 SYST3M - NeverDiePVP
+  </footer>
+
+  <script>
+    function switchTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    const translations = {
+      de: {
+        subtitle: "NeverDiePVP Crew",
+        "req-title": "🔥 Voraussetzungen",
+        requirements: `
+          <li>Mindestens <strong>500 Kills</strong> (POV erforderlich)</li>
+          <li>Mindestens <strong>1.7 KD</strong> (POV erforderlich)</li>
+          <li>Aktivität auf <strong>NeverdiePVP</strong></li>
+          <li>Respektvolles Verhalten gegenüber Crew & Gegnern</li>
+        `,
+        "about-title": "👥 Über die Crew",
+        "about-text": `Wir waren eine lange Zeit auf <strong>GermanFastCrimeLife</strong> aktiv und haben dort jede Fraktion dominiert. Jetzt sind wir auf <strong>NeverdiePVP</strong> – und unser Ziel ist klar: Wir reißen alles auseinander. Nur die Stärksten gehören zu uns – willkommen bei <span style="color: #ff3b3b;">SYST3M</span>.`,
+        "discord-text": `Wenn du gut bist – zeig es uns auf Discord!<br>If you're good – prove it on Discord!<br>Si tu es fort – rejoins notre Discord !`,
+        "members-title": "👑 Crew-Mitglieder"
+      },
+      en: {
+        subtitle: "NeverDiePVP Crew",
+        "req-title": "🔥 Requirements",
+        requirements: `
+          <li>At least <strong>500 kills</strong> (POV required)</li>
+          <li>Minimum <strong>1.7 KD</strong> (POV required)</li>
+          <li>Active on <strong>NeverdiePVP</strong></li>
+          <li>Respectful to crew and enemies</li>
+        `,
+        "about-title": "👥 About the Crew",
+        "about-text": `We were long active on <strong>GermanFastCrimeLife</strong>, dominating every faction. Now we're on <strong>NeverdiePVP</strong> – and we’re here to destroy everything. Only the strongest join <span style="color: #ff3b3b;">SYST3M</span>.`,
+        "discord-text": `If you're good – prove it on Discord!<br>Wenn du gut bist – zeig es uns auf Discord!<br>Si tu es fort – rejoins notre Discord !`,
+        "members-title": "👑 Crew Members"
+      },
+      fr: {
+        subtitle: "Équipe NeverDiePVP",
+        "req-title": "🔥 Conditions",
+        requirements: `
+          <li>Minimum <strong>500 kills</strong> (POV requis)</li>
+          <li>Minimum <strong>1.7 KD</strong> (POV requis)</li>
+          <li>Actif sur <strong>NeverdiePVP</strong></li>
+          <li>Respect envers l'équipe et les ennemis</li>
+        `,
+        "about-title": "👥 À propos de l'équipe",
+        "about-text": `Nous étions actifs longtemps sur <strong>GermanFastCrimeLife</strong> et avons dominé toutes les factions. Maintenant, nous sommes sur <strong>NeverdiePVP</strong> – et nous allons tout casser. Seuls les plus forts rejoignent <span style="color: #ff3b3b;">SYST3M</span>.`,
+        "discord-text": `Si tu es fort – rejoins notre Discord !<br>If you're good – prove it on Discord!<br>Wenn du gut bist – zeig es uns auf Discord!`,
+        "members-title": "👑 Membres de l'équipe"
+      }
+    };
+
+    function switchLanguage(lang) {
+      const t = translations[lang];
+      document.getElementById("subtitle").innerHTML = t.subtitle;
+      document.getElementById("req-title").innerHTML = t["req-title"];
+      document.getElementById("requirements").innerHTML = t.requirements;
+      document.getElementById("about-title").innerHTML = t["about-title"];
+      document.getElementById("about-text").innerHTML = t["about-text"];
+      document.getElementById("discord-text").innerHTML = t["discord-text"];
+      document.getElementById("members-title").innerHTML = t["members-title"];
+    }
+  </script>
+</body>
+</html>
